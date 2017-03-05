@@ -8,5 +8,8 @@ From: ubuntu:14.04
 
 
 %post
+    apt-get update && apt-get install -y git
+    git clone http://www.github.com/researchapps/graspit.git
+    cd graspit
     chmod u+x post.sh
-    ./post.sh
+    bash post.sh
